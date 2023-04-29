@@ -1,0 +1,43 @@
+body {
+  background: black;
+  letter-spacing: 0.125em;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  
+  .btn {
+  background: none;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 1em;
+  padding: 1em 2em;
+  text-transform: inherit;
+  width: 30%;
+  transition: color 1s;
+  }
+  
+  .btn-1 {
+  color: #ffd900;
+  }
+  .btn-1:hover {
+  -webkit-animation: blinds 0.75s linear forwards;
+  animation: blinds 0.75s linear forwards;
+  background: linear-gradient(0deg, #ffd900 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #ffd900 50%, transparent 50%) 0 0/1em 1em;
+  color: #000000f5;
+  }
+  
+  @-webkit-keyframes blinds {
+  100% {
+  background-position: 0 0, 0 -3em;
+  background-size: 0 0, 1em 6em;
+  }
+  }
+  
+  @keyframes blinds {
+  100% {
+  background-position: 0 0, 0 -3em;
+  background-size: 0 0, 1em 6em;
+  }
+  }
